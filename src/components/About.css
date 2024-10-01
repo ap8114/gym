@@ -1,0 +1,96 @@
+.about-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #2c5364, #0f2027);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .about-section img {
+    width: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: sparkle 2s infinite alternate ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+
+
+@keyframes sparkle {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4),
+                0 0 30px rgba(255, 215, 0, 0.3),
+                0 0 45px rgba(255, 165, 0, 0.2),
+                0 0 60px rgba(255, 69, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6),
+                0 0 40px rgba(255, 215, 0, 0.5),
+                0 0 60px rgba(255, 165, 0, 0.4),
+                0 0 80px rgba(255, 69, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8),
+                0 0 50px rgba(255, 215, 0, 0.7),
+                0 0 75px rgba(255, 165, 0, 0.6),
+                0 0 100px rgba(255, 69, 0, 0.5);
+  }
+}
+  
+
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image img {
+      width: 90%;
+    }
+  }
+  

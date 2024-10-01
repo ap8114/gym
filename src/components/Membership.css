@@ -1,0 +1,67 @@
+.membership-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #1f4037, #0f2027);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+  .membership-section h2{
+margin-top: -6rem;
+padding-bottom: 1.5rem;
+  }
+
+  .membership-section p{
+padding-bottom: 1.2rem;
+  }
+  
+  .membership-section img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .plan-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+  }
+  
+  .plan-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .plan-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .plan-card:hover {
+    transform: scale(1.05);
+    background-color:darkgoldenrod
+  }
+
+  @media screen and (max-width: 768px) {
+    .classes-container, .plans-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .class-card, .plan-card {
+      width: 90%;
+    }
+  }
